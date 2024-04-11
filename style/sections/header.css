@@ -1,0 +1,81 @@
+/* Set thuộc tính thẻ Header */
+#header {
+    position: fixed;
+    height: 46px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black-color);
+    z-index: 1;
+}
+
+/* UL có tính chắc block sẽ kế thừa hết chiều ngang nên ta cài đặt thuộc tính vào thẻ để mục dích UL có nội dung đến đâu sẽ dài tới đó */
+#nav,
+#nav > li {
+    display: inline-block;
+}
+
+/* Thiết lập vị trí tương đối cho thẻ Nav Li */
+#nav li {
+    position: relative; 
+}
+
+/* Set các thuộc tính trong thẻ NAV LI A */
+#nav li a {
+    color: var(--white-color);
+    font-size: var(--p-font);
+    line-height: 46px; 
+    text-decoration: none; 
+    padding: 0 24px; 
+    display: block;
+}
+
+/* Set chữ in hoa toàn bộ thẻ NAV > LI > A */
+#nav > li > a {
+    text-transform: uppercase; 
+}
+
+/* Set di chuột vào sẽ chuyển đổi màu chữ và màu background */
+#nav > li:hover > a,
+#nav .sub-nav li:hover a {
+    color: var(--black-color); 
+    background-color: var(--chinese-silver-color); 
+}
+
+/* Set thuộc tính cho thẻ SUB-NAV */
+#nav .sub-nav {
+    list-style-type: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    box-shadow: var(--button-header); 
+}
+
+/* Cài đặt khi ta dí chuột vào MORE thì mới hiển thị bảng mở rộng */
+#nav li:hover .sub-nav li a {
+    display: block;
+}
+
+/* Set thuộc tính cho thẻ NAV SUBNAV LI A */
+#nav .sub-nav li a {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    display: none; 
+    padding: 0 12px;  
+    line-height: 38px; 
+    min-width: 160px; 
+} 
+
+/* Set thuộc tính cho thẻ HEADER SEARCH-BUTTON */
+#header .search-button {
+    float: right; /* Đẩy icon sang sang bên phải website */
+    color: var(--white-color);
+    line-height: 46px;
+    padding: 0 21px; 
+}
+
+/* Set di chuột vào sẽ chuyển đổi màu chữ và màu background */
+#header .search-button:hover {
+    background-color: #f44336!important;
+    cursor: pointer; 
+}

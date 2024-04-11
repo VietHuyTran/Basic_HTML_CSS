@@ -1,0 +1,32 @@
+#slider {
+    margin-top: 46px; 
+    /* Để thỏa mãn điều kiện chiều cao bằng 50% của chiều ngang ta phải thêm thuộc tính padding-top */ 
+    padding-top: 50%; /* Với 50% có nghĩa là bằng 50% của chính nó */
+    background: url(/assets/images/chicago.jpg) top center / cover no-repeat;
+    position: relative; 
+}
+    
+    #slider .text-content {
+        color: var(--white-color);
+        position: absolute;
+        bottom: 47px;
+        /* Cách canh giữa giao diện web */
+        text-align: center;
+        right: 0;
+        left: 0;
+    
+        /* Hoặc có thể thay thê bằng cách này 
+        width: 100%;
+        text-align: center;
+        */
+    }
+    
+    #slider .text-content .text-heading {
+        font-size: var(--h3-font);
+        margin: 10px 0;
+    }
+    
+    #slider .text-content .text-comment {
+        font-family: Lato;
+        font-size: var(--p-font);
+    }

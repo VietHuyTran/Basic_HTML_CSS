@@ -1,0 +1,97 @@
+/* Làm trang ẩn cho Buy Ticket */
+.modal {
+    position: fixed;
+    display: none; /* Thuộc tính để  modal-container nằm giữa modal */
+    align-items: center; /* Thuộc tính cân modal-container nằm giữa chiều cao của modal */
+    justify-content: center; /* Thuộc tính cân modal-container nằm giữa chiều ngang của modal */
+    background-color: var(--sonic-silver-color-transparent);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.modal .modal-container {
+    background-color: var(--white-color);
+    width: 900px;
+    min-height: 200px; /* Thuộc tính đặt chiều cao tối thiểu */
+    position: relative;
+    max-width: calc(100% - 32px); /* Thuộc tính dùng để kéo to kéo to kéo nhỏ website thì modal vẫn ở 2 bên 16px */
+}
+
+.modal .modal-close {
+    position: absolute;
+    right: 0; /* Thuộc tính Move nút nhấn exit sang bên phải */
+    font-size: var(--h3-font);
+    color: var(--white-color);
+    padding: 8px 16px;
+}
+
+.modal .modal-close:hover {
+    cursor: pointer;
+    background-color: var(--coral-red-color);
+    color: var(--black-color);
+}
+
+.modal .modal-header {
+    font-family: Arial;
+    font-size: var(--h2-font);
+    color: var(--white-color);
+    background-color: var(--dark-cyan);
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 5px; /* Thuộc tính tăng khoảng cách các chữ */
+}
+
+.modal .modal-header i {
+    margin-right: 16px;
+}
+
+.modal .modal-body {
+    padding: 16px;
+    font-family: Lato;
+    font-size: var(--p-font);
+}
+
+.modal .modal-label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.modal .modal-input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.modal .buy-ticket {
+    border: none;
+    text-transform: uppercase; /* Thuộc tính viết in hoa tất cả các chữ */
+    background-color: var(--dark-cyan);
+    color: var(--white-color);
+    width: 100%;
+    padding: 18px;
+}
+
+.modal .buy-ticket:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.modal .modal-footer {
+    text-align: right;
+    font-family: Lato;
+    font-size: var(--p-font);
+    padding: 16px;
+}
+
+.modal .modal-footer a {
+    color: var(--cyan-blue);
+    text-decoration: none;
+}
+
+.modal.open {
+    display: flex;
+}

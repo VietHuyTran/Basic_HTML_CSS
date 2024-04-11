@@ -1,0 +1,237 @@
+/* THE BAND */
+#the-band {
+    width: 800px;
+    height: 680px;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+
+.content-section .heading-section {
+    font-family: Arial;
+    font-size: var(--h2-font);
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.content-section .text-section {
+    font-family: Arial;
+    font-size: var(--p-font);
+    font-style: italic;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 60%;
+}
+
+.content-section .about-band {
+    font-family: Lato;
+    font-size: var(--p-font);
+    text-align: justify;
+    line-height: 140%;
+    margin: 15px 0;   
+}
+
+#the-band .members-list {
+    width: 768px;
+    height: 300px;
+    padding: 32px 0;
+}
+
+#the-band .members-items {
+    float: left; /* Thuộc tính kéo sang trái */
+    width: calc(100% / 3); /* Cân 2 đầu tất cả hình ảnh trên 1 hàng */
+    text-align: center; /* Cân giữa */
+}
+
+#the-band .members-name {
+    font-family: Lato;
+    font-size: var(--p-font);
+    margin: 15px 0;
+}
+
+#the-band .members-img {
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 4px; /* Thuộc tính bo các góc của hình ảnh */
+}
+
+/* TOUR DATES */
+#tour-dates {
+    background-color: var(--black-color);
+}
+
+#tour-dates .content-section {
+    width: 768px;
+    height: 800px;
+    padding: 64px 16px;
+    margin: 0 auto;
+}
+
+#tour-dates .text-section,
+#tour-dates .heading-section {
+    color: var(--white-color) !important;
+}
+
+#tour-dates .tickets-list li {
+    background: var(--white-color);
+    font-family: Lato;
+    font-size: var(--p-font);
+    color: var(--sonic-silver-color);
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--chinese-silver-color);
+    list-style: none; /* Thuộc tính bỏ dấu chấm đầu dòng */ 
+}
+
+#tour-dates .sold-out {
+    background-color: var(--coral-red-color);
+    color: var(--white-color);
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+#tour-dates .quantily {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 50%; /* Thuộc tính làm khung hình tròn */
+    text-align: center; 
+    line-height: 24px; /* Thuộc tính cân giữa từ trên xuống = đúng chiều cao */
+    margin: -3px;
+}
+
+#tour-dates .place-list {
+    margin: 32px -8px 0; /* Thuộc tính cân ảnh cho bên trái và bên phải */
+}
+
+#tour-dates .place-items {
+    float: left;
+    width: calc(100% /3);
+    padding: 0 8px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+#tour-dates .place-img {
+    width: 100%;
+    display: block;
+}
+
+#tour-dates .place-img:hover {
+    opacity: 60%;
+}
+
+#tour-dates .place-text {
+    background: var(--white-color);
+    padding: 16px 16px 0;
+    font-family: Lato;
+    font-size: var(--p-font);
+}
+
+#tour-dates .place-heading {
+    margin: 15px 0;
+    font-weight: bold; /* Thuộc tính làm đậm chữ */
+}
+
+#tour-dates .place-time {
+    margin: 15px 0;
+    opacity: 60%;
+}
+
+#tour-dates .place-desc {
+    margin: 15px 0;
+    line-height: 120%;
+}
+#tour-dates .place-button {
+    text-decoration: none;
+    margin-bottom: 16px;
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: 11px 16px;
+    display: inline-block;
+}
+
+#tour-dates .place-button:hover {
+    color: var(--black-color) !important;
+    background: var(--chinese-silver-color) !important;
+    cursor: pointer;
+}
+
+/* CONTACT */
+#contact {
+    width: 768px;
+    height: 459px;
+    padding: 64px 16px;
+    margin: 0 auto;
+}
+
+#contact .contact-container {
+    width: 100%;
+    padding: 32px 0;
+    display: block;
+    float: left;
+}
+
+#contact .contact-inform {
+    float: left;
+    width: 50%;
+    display: block;
+    font-family: Lato;
+    font-size: var(--contact-font);
+    line-height: 1.5;
+}
+
+#contact .contact-inform .fa { 
+    width: 30px;
+}
+
+#contact .concact-text {
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+input.form-control {
+    display: block;
+    border: none;
+    border: 1px solid var(--chinese-silver-color);
+    width: 100%;
+    padding: 12px 0;
+    font-size: var(--p-font);
+    margin-bottom: 8px;
+}
+
+#contact .half-padding {
+    box-sizing: inherit;
+    float: left;
+    width: 100%;
+}
+
+#contact .half {
+    width: 50%;
+    float: left;
+}
+
+#contact .bts-send {
+    display: block;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: Lato;
+    font-size: var(--p-font);
+    border: 1px solid var(--black-color);
+    float: right;
+    padding: 10px 16px;
+}
+
+#contact .bts-send:hover {
+    color: var(--black-color) !important;
+    background: var(--chinese-silver-color) !important;
+    cursor: pointer;
+}
+
+/* Map */
+.map img {
+    width: 100%;
+    height: auto;
+}

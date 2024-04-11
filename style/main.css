@@ -1,0 +1,17 @@
+/* Fonts */
+@import url("../style/fonts.css");
+
+/* Base styles */
+@import url("../styles/base/reset.css");
+@import url("../style/base/global.css");
+
+/* Abstracts */
+@import url("../style/abstracts/variable.css");
+
+/* Sections */
+@import url("../style/sections/header.css");
+@import url("../style/sections/slider.css");
+@import url("../style/sections/content.css");
+@import url("../style/sections/footer.css");
+@import url("../style/sections/modal.css");
+

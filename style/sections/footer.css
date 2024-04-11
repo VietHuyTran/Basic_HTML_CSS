@@ -1,0 +1,22 @@
+#footer {
+    padding: 64px 16px;
+    background: var(--Anti-Flash-white);
+}
+
+
+#footer .footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-family: Lato;
+    font-size: var(--p-font);
+    text-decoration: none;
+    color: var(--sonic-silver-color);
+}
+
+#footer .footer-text a {
+    color: var(--cyan-blue);
+    text-decoration: none;
+    padding: 0 3px;
+}

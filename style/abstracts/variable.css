@@ -1,0 +1,21 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --sonic-silver-color: #757575;
+  --coral-red-color: #F44336;
+  --black-color: #000;
+  --chinese-silver-color: #ccc;
+  --sonic-silver-color-transparent: rgba(117, 117, 117, 0.3);
+  --dark-cyan: #009688;
+  --cyan-blue: #2196f3;
+  --Anti-Flash-white: #f1f1f1;
+
+  /* font size */
+  --h2-font: 30px;
+  --h3-font: 24px;
+  --p-font: 15px;
+  --contact-font: 18px;
+
+  /* box shadow */
+  --button-header: 0 0 10px rgba(0, 0, 0, 0.3),
+}
